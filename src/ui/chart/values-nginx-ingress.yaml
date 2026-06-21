@@ -28,12 +28,8 @@ ingress:
     nginx.ingress.kubernetes.io/proxy-set-header: "X-Real-IP $remote_addr"
     # Cert-manager annotations
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
-  hosts:
-    - retail-store.iemafzalhassan.in
-  tls:
-    - hosts:
-        - retail-store.iemafzalhassan.in
-      secretName: retail-store-tls
+  hosts:[]]
+  tls:[]
 
 # Application configuration
 app:
@@ -59,10 +55,5 @@ metrics:
     prometheus.io/port: "8080"
     prometheus.io/path: "/actuator/prometheus"
 
-# Cert Manager Configuration
 certManager:
-  createClusterIssuer: true
-  email: iemafzalhassan@gmail.com
-  clusterIssuerName: "letsencrypt-prod"
-  server: "https://acme-v02.api.letsencrypt.org/directory"
-  privateKeySecretName: "letsencrypt-prod-key" 
+  createClusterIssuer: false
