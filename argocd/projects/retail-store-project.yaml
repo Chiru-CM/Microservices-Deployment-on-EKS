@@ -38,3 +38,5 @@ spec:
       kind: HorizontalPodAutoscaler
     - group: 'policy'
       kind: PodDisruptionBudget 
+    - group: 'networking.k8s.io'
+      kind: Ingress
