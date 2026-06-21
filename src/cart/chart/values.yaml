@@ -82,3 +82,5 @@ podDisruptionBudget:
   maxUnavailable: 1
 httpRoute:
   enabled: false
+ingress:
+  enabled: false
