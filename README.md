@@ -21,7 +21,6 @@ A production-grade microservices deployment on **Amazon EKS** using a full GitOp
 
 ## Architecture
 
-```
 ![alt text](EKS.gif)
 
 ---
